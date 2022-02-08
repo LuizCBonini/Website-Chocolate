@@ -27,8 +27,8 @@ html {
     /* Se transbordar no eixo X, vai esconder.*/
     overflow-x: hidden;
 
-    /* Ficará automático aparecer uma parte da proxima seção da pagina indicando continuidade ao usuário */ 
-    scroll-padding-top: 9rem;
+    /* Para parar de modo que mostre a seção por inteiro na pagina.*/ 
+    scroll-padding-top: 12rem;
 
     /* Ira subir e descer a tela calmamente quando solicitado*/
     scroll-behavior: smooth;
@@ -305,13 +305,90 @@ section {
     background-color: #33221B;
 }
 
+/* =============================== MENU =============================== */
+.menu .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
 
+.menu .box-container .box {
+    padding: 5rem;
+    text-align: center;
+    border: var(--border);
+}
 
+.menu .box-container .box img {
+    height: 10rem;
+}
 
+.menu .box-container .box h3 {
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
 
+.menu .box-container .box .btn {
+    font-size: 1.5rem;
+    padding: .9rem 2rem;
+}
 
+.menu .box-container .box .price {
+    color: #fff;
+    font-size: 2.5rem;
+    padding: .5rem 0;
+}
 
+.menu .box-container .box .price span {
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
 
+.menu .box-container .box:hover {
+    background: #33221B;
+}
+
+/* =============================== REVIEW =============================== */
+.review .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.review .box-container .box {
+    border: var(--border);
+    text-align: center;
+    padding:3rem 2rem;
+}
+
+.review .box-container .box .quotes {
+    height: 7rem;
+    width: 10rem;
+}
+
+.review .box-container .box p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #ccc;
+    padding: 2rem 0;
+}
+
+.review .box-container .box .user {
+    height: 7rem;
+    width: 7rem;
+    object-fit: cover;
+}
+
+.review .box-container .box h3 {
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.review .box-container .box .stars i {
+    font-size: 1.5rem;
+    color: var(--main-color); 
+}
 
 
 
